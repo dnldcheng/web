@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variables</title>
+  </head>
+
+  <body>
+    <script>
+      score = JSON.parse(localStorage.getItem('money')) || 0
+      alert(score)
+      if (true) {
+        console.log(Math.random())
+        score += 1
+        localStorage.setItem('money', JSON.stringify(score))
+      } else {
+        console.log('bye')
+      }
+    </script>
+    <button onclick="
+    localStorage.removeItem('money')
+    ">reset</button>
+
+  </body>
+  </html>
